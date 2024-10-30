@@ -3,7 +3,7 @@ VERSION="0.0.2"
 INFECTED=0
 FAILED=""
 
-_loading () { echo -ne "\033[1;33m$1\033[0m"; }
+_loading () { echo -ne "\033[1;33m$1\033[0m\n"; }
 _running () { echo -ne "\033[1;32m$1\033[0m"; }
 _error () { echo -ne "\033[1;31m$1\033[0m"; }
 _warning () { echo -ne "\033[1;33m$1\033[0m"; }
