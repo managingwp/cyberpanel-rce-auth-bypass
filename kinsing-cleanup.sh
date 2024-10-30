@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-VERSION="0.0.1"
+VERSION="0.0.2"
 INFECTED=0
 FAILED=""
 
-_loading () { echo -ne "\033[1;33m$1\033[0m"; }
+_loading () { echo -ne "\033[1;33m$1\n\033[0m"; }
 _running () { echo -ne "\033[1;32m$1\033[0m"; }
 _error () { echo -ne "\033[1;31m$1\033[0m"; }
 _warning () { echo -ne "\033[1;33m$1\033[0m"; }
@@ -57,7 +57,7 @@ if [ -f /tmp/kdevtmpfsi ]; then
     _warning "Found kinsing malware\n"
     INFECTED=1
     # Use ps to see if kdevtmpfsi is running
-elif [[ $(_check_running_kinsing) ]]; then
+elif [[ $(_check_for_running_kinsing) ]]; then
     _warning "Found kinsing malware running as a process"
     INFECTED=1
 else
