@@ -61,8 +61,8 @@ echo "$MASTER_KEY" > /tmp/private.pem
 MASTER_KEY_PATH="/tmp/private.pem"
 
 # Decrypt the encryption key with the master key
-openssl pkeyutl -decrypt -inkey /tmp/private.pem -in /var/key.enc -out /tmp/key.enc
-openssl pkeyutl -decrypt -inkey /tmp/private.pem -in /var/iv.enc -out /tmp/iv.enc
+openssl pkeyutl -decrypt -inkey $MASTER_KEY_PATH -in /var/key.enc -out /tmp/key.enc
+openssl pkeyutl -decrypt -inkey $MASTER_KEY_PATH -in /var/iv.enc -out /tmp/iv.enc
 
 local_key=$(cat /tmp/key.enc|xxd -p)
 local_iv=$(cat /tmp/iv.enc|xxd -p)

@@ -6,11 +6,11 @@ https://managingwp.io/live-blog/cyberpanel-servers-v2-3-6-hacked-via-pre-auth-rc
 ## Repository Rename
 Sorry, I renamed this repository as there seems to be not just kinsing but also other malware and ransomeware such as PSAUX, XMRIG, and others. I will be updating the script to include these as well.
 
-# Known Malware
+# Malware
 ## kinsing
 Use the kinsing-cleanup.sh
 ## PSAUX
-You can see the following gist https://gist.github.com/gboddin/d78823245b518edd54bfc2301c5f8882 it's also mirroed under psaux directory
+You can see the following gist https://gist.github.com/gboddin/d78823245b518edd54bfc2301c5f8882 it's also mirrored under psaux directory
 
 # Submitting PR's
 All PR's should be done off the dev branch
