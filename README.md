@@ -3,14 +3,19 @@ The purpose of this script is to automate the following blog post instructions.
 
 https://managingwp.io/live-blog/cyberpanel-servers-v2-3-6-hacked-via-pre-auth-rce-october-28th-2024/
 
-## Repository Rename
-Sorry, I renamed this repository as there seems to be not just kinsing but also other malware and ransomeware such as PSAUX, XMRIG, and others. I will be updating the script to include these as well.
+# Running kinsing-cleanup.sh
+```wget -qO- https://raw.githubusercontent.com/managingwp/cyberpanel-rce-auth-bypass/refs/heads/main/kinsing-cleanup.sh | bash```
 
 # Malware
 ## kinsing
-Use the kinsing-cleanup.sh
+Use the kinsing-cleanup.sh script. This script will remove the kinsing malware from your server. This malware just runs a cryptominer on your server and doesn't encrypt files.
+
+# Ransomware
 ## PSAUX
 You can see the following gist https://gist.github.com/gboddin/d78823245b518edd54bfc2301c5f8882 it's also mirrored under psaux directory
+## c3rb3r
+Not much know about this ransomware yet.
+
 
 # Submitting PR's
 All PR's should be done off the dev branch
